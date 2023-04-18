@@ -1,0 +1,190 @@
+.titel{
+    margin: auto;
+    width: 65%;
+    font-size: 57px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px; 
+}
+.titelGradient{
+    background: -webkit-linear-gradient(#863feb, #4976f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.afterTitle{
+    margin: 20px auto;
+    width: 70%;
+    font-size: 18px;
+    text-align: center;
+    color: var(--textgrey);
+}
+.btnWhite{
+    border: 2px solid;
+    border-radius: 3px;
+    border-image: linear-gradient( #863feb, #4976f4) 1;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1E40AF;
+    background-color: white;
+    align-items: center;
+}
+.icon{
+  margin-right: 5px;
+}
+.getStartedBtnBody{
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    background: rgb(134,63,235);
+    background: linear-gradient(166deg, rgba(134,63,235,1) 0%, rgba(73,118,244,1) 100%);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px var(--backgroundbox);
+}
+.btns{
+    align-items: center;
+    margin:auto;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.textGrey{
+    color: var(--textgrey);
+    
+}
+.mignature{
+    width:70%;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+.afterVd{
+    width: 33%;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+}
+.afterVd > h4{
+    font-weight: 700;
+    color: var(--textdarkgrey);
+    margin: 5px;
+}
+.afterVd > p{
+    color: var(--textgrey);
+    font-size: 15px;
+}
+.brands{
+   
+    display: flex;
+    justify-content: space-around;
+    margin:auto;
+}
+.brands > img{
+    width:160px;
+    height:45px;
+    padding: 45px;
+    
+}
+.MadeForTeamwork{
+    background-color: var(--backgroundbox);
+    height: auto;
+    padding: 55px;
+}
+.boxe{
+    background-color: white;
+    border-radius: 7px;
+    width: 95%;
+    height: 215px;
+    margin: auto;
+    padding: 35px;
+}
+.boxe > h3{
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--textdarkgrey);
+}
+.boxe > p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.inputEmail{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+.inputEmail > input{
+    width: 75%;
+    padding: 5px;
+    border-color: var(--backgroundbox) !important;
+    border: 1px solid;
+    box-shadow: 1px 1px var(--backgroundbox);
+}
+.whystartupsquare{
+    text-align:center ;
+    padding: 35px;
+}
+.remarque{
+    width: 50px;
+    border-radius: 30px;
+    background-color: var(--backgroundremarque);
+    color: var(--secondeblue);
+    font-size: 10px;
+    padding: 3px;
+}
+.whystartupsquare > h2{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titre-card{
+    font-size: 20px;
+}
+.card{
+    width: 250px;
+    height: 500px;
+    padding: 15px;
+    background-color: var(--backgroundbox) !important ;
+    border-color: var( --bordercardcolor);
+}
+.card-img-top{
+    height: 150px;
+    width: 190px !important;
+    margin: auto;
+}
+.card-text{
+    font-size: 13px;
+    color: var(--textgrey);
+}
+.MadeForTeamwork > div{
+    text-align: center !important;
+}
+.valeur{
+    width: 385px;
+    padding: 65px;
+    height: 250px;
+}
+.whystartupsquare > div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.valeur > div{
+    color: white;
+    background: rgb(134,63,235);
+    background: linear-gradient(166deg, rgba(134,63,235,1) 0%, rgba(73,118,244,1) 100%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: auto;
+    font-size: 25px;
+
+}
