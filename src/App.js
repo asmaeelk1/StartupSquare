@@ -10,6 +10,7 @@ import StartupSquare from "./docs/logoStartupSquare.png";
 function App() {
   return (
     <BrowserRouter>
+    <div className="contenaire">
       <nav className="navbar navbar-expand-lg ">
         <img className="brand" src={StartupSquare} alt="brand" />
         <ul className="ulApp ">
@@ -41,6 +42,7 @@ function App() {
           <button className="getStartedBtnNav">Get Started</button>
         </NavLink>
       </nav>
+      </div>
 
       <Routes>
         <Route path="/" element={<Home />} />

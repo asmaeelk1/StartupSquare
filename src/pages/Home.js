@@ -69,7 +69,7 @@ export default function Home() {
     </div>
       </section>
       <section className='MadeForTeamwork'>
-        <div>
+        <div className='how'>
           <span className='remarque'>HOW</span>
         <h2 className='titelGradient'>How it works ?</h2>
         <p className='afterTitle'>As simple as building LEGO</p>
@@ -105,6 +105,17 @@ export default function Home() {
           <div> <BiSearch className='icone'/></div>
           <h4>Transparency</h4>
           <p className='card-text'>With its native ability to keep track of every single action, Startup Square makes your program management workflow fully transparent</p>
+        </div>
+      </div>
+      </section>
+      {/* section elevate your ecosystem */}
+      <section className='MadeForTeamwork'>
+      <div className='boxe'>
+        <h3>Elevate your ecosystem.</h3>
+        <p>Discover our apps and take your ecosystem to the next level.</p>
+        <div className='inputEmail'>
+          <input placeholder='Your work email' />
+          <button className='getStartedBtnBody'>Get started</button>
         </div>
       </div>
       </section>

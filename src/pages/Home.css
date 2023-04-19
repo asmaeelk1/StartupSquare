@@ -98,7 +98,7 @@
     border-radius: 7px;
     width: 95%;
     height: 215px;
-    margin: auto;
+    text-align: start;
     padding: 35px;
 }
 .boxe > h3{
@@ -164,7 +164,7 @@
     font-size: 13px;
     color: var(--textgrey);
 }
-.MadeForTeamwork > div{
+.how{
     text-align: center !important;
 }
 .valeur{
