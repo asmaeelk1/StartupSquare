@@ -188,3 +188,30 @@
     font-size: 25px;
 
 }
+.btnShow{
+    margin-top: 15px;
+}
+.boxeGradient{
+    background: rgb(134,63,235);
+    background: linear-gradient(166deg, rgba(134,63,235,1) 0%, rgba(73,118,244,1) 100%);
+    border-radius: 7px;
+    width: 95%;
+    height: 215px;
+    text-align: start;
+    color: white;
+    padding: 35px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.getStartedBtnBody2{
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    background-color: white;
+    color: var(--secondeblue);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px var(--backgroundbox);
+}
+

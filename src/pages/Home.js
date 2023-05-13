@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
-import MT from './meta.png';
-import FinanceCity from './fianceCity.png';
-import WorldBank from './worldBank.jpeg';
-import Auf from './auf.png';
+import MT from '../docs/meta.png';
+import FinanceCity from '../docs/fianceCity.png';
+import WorldBank from '../docs/worldBank.jpeg';
+import Auf from '../docs/auf.png';
 import {data} from './contentcards';
 import Cards from './card.js';
+import Cards2 from './card2.js';
+import {data2} from './contentcards2.js';
 import {Modal } from './modale.js';
 import { BiCalendar ,BiSearch } from 'react-icons/bi';
+import JoinUs from './JoinUs.js';
 
 export default function Home() {
+  const maxCardToDisplay= 4;
+  const [numCardDisplayed, setnumCardDisplayed]=useState(maxCardToDisplay);
+  const showMoreCards = () => {
+    setnumCardDisplayed(numCardDisplayed + maxCardToDisplay);
+  };
+
+  const showLessCards = () => {
+    setnumCardDisplayed(maxCardToDisplay);
+  };
   return (
     <div>
         {/* section titre de video  */}
@@ -119,6 +131,34 @@ export default function Home() {
         </div>
       </div>
       </section>
+      {/* section Powerful apps */}
+      <section className='whystartupsquare'>
+        <span className='remarque'>APPS</span>
+        <h2 className='titelGradient'>Powerful apps to fuel your program efficiency !</h2>
+        <p className='afterTitle'>Discover our amazing apps which will allow you to take your innovation program to the next level</p>
+        <div className='cards'>
+      {data2.slice(0,numCardDisplayed).map((item , index)=>{
+        return(
+          <Cards2
+          key={index}
+          img={item.img}
+          titel={item.titel}
+          description={item.description}
+          />
+        )
+      })}
+
+    </div>
+       {numCardDisplayed < data2.length ? (
+        <div>
+          <button className='getStartedBtnBody btnShow'  onClick={showMoreCards}>Show More ...</button>
+        </div>
+      ) : (
+        <button className='getStartedBtnBody btnShow' onClick={showLessCards}>Show Less</button>
+      )}
+      </section>
+      {/* section join us now */}
+      <JoinUs/>
     </div>
   )
 }

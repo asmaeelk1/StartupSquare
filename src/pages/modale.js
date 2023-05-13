@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./modal.css";
-import image from './mignatureVd.png'
-import video from './vd.mp4'
+import image from '../docs/mignatureVd.png'
+import video from '../docs/vd.mp4'
 
 export function Modal() {
   const [modal, setModal] = useState(false);

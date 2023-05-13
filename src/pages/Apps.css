@@ -1,0 +1,12 @@
+.gradient{
+    background: -webkit-linear-gradient(#863feb, #4976f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 115px;
+}
+.inputafterTitel{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+}

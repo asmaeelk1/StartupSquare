@@ -1,0 +1,29 @@
+ .cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.titre-card{
+    font-size: 20px;
+    text-align: start;
+}
+.cardDeux{
+    width: 550px;
+    height: 300px;
+    padding: 15px;
+    margin: 15px !important;
+    background-color: var(--backgroundbox) !important ;
+    border-color: var( --bordercardcolor);
+}
+.card-img-top{
+    height: 150px;
+    width: 190px !important;
+    margin: auto;
+}
+.card-text{
+    font-size: 13px;
+    color: var(--textgrey);
+    text-align: start;
+
+}

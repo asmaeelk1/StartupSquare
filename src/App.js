@@ -1,12 +1,15 @@
 import "./App.css";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Login from "./pages/Login";
-import Pricing from "./pages/Pricing";
-import Apps from "./pages/Apps";
+import Home from "./pages/Home.js";
+import About from "./pages/About.js";
+import Login from "./pages/Login.js";
+import Pricing from "./pages/Pricing.js";
+import Apps from "./pages/Apps.js";
 import GetStarted from "./pages/GetStarted";
 import StartupSquare from "./docs/logoStartupSquare.png";
+import Footer from "./pages/Footer.js";
+import dataFooter from "./pages/contentFooter";
+
 function App() {
   return (
     <BrowserRouter>
@@ -24,11 +27,7 @@ function App() {
               Apps
             </NavLink>
           </li>
-          <li>
-            <NavLink className="nav_op" to="pricing">
-              Pricing
-            </NavLink>
-          </li>
+          
           <li>
             <NavLink className="nav_op" to="About">
               About
@@ -44,16 +43,19 @@ function App() {
       </nav>
       </div>
 
+     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="apps" element={<Apps />} />
-        <Route path="pricing" element={<Pricing />} />
         <Route path="about" element={<About />} />
         <Route path="login" element={<Login />} />
         <Route path="getstarted" element={<GetStarted />} />
       </Routes>
-      <footer></footer>
+      <footer>
+       <Footer/>
+      </footer>
     </BrowserRouter>
+    
   );
 }
 

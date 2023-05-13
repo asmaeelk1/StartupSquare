@@ -1,0 +1,11 @@
+article{
+    display: flex;
+    justify-content: space-between;
+}
+article > div{
+    width: 70%;
+}
+h4{
+    font-weight: 800;
+    color: black;
+}

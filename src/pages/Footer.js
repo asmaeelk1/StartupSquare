@@ -1,0 +1,53 @@
+import React from 'react';
+import './Footer.css';
+import { NavLink } from 'react-router-dom';
+import {BsTwitter , BsFacebook, BsYoutube, BsLinkedin,BsInstagram} from 'react-icons/bs';
+
+export default function Footer(props) {
+  return (
+    <footer className="footer">
+    <div className="container">
+      <div className="row">
+        <div className="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><NavLink to={"#"}>about us</NavLink></li>
+            <li><NavLink to={"#"}>our services</NavLink></li>
+            <li><NavLink to={"#"}>privacy policy</NavLink></li>
+            <li><NavLink to={"#"}>affiliate program</NavLink></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><NavLink to={"#"}>FAQ</NavLink></li>
+            <li><NavLink to={"#"}>shipping</NavLink></li>
+            <li><NavLink to={"#"}>returns</NavLink></li>
+            <li><NavLink to={"#"}>order status</NavLink></li>
+            <li><NavLink to={"#"}>payment options</NavLink></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><NavLink to={"#"}>watch</NavLink></li>
+            <li><NavLink to={"#"}>bag</NavLink></li>
+            <li><NavLink to={"#"}>shoes</NavLink></li>
+            <li><NavLink to={"#"}>dress</NavLink></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>follow us</h4>
+          <div className="social-links">
+            <NavLink to={"https://www.youtube.com/channel/UCyk7tYgyFN2q0vbQjJf9Qrg"} target="_blank"><BsYoutube/></NavLink>
+            <NavLink to={"https://www.linkedin.com/company/startupsquare/"}><BsLinkedin/></NavLink>
+            <NavLink to={"https://web.facebook.com/StartupSquare.co?_rdc=1&_rdr"} target="_blank"><BsFacebook/></NavLink>
+            <NavLink to={"https://twitter.com/StartupSquare"} target="_blank"><BsTwitter/></NavLink>
+            <NavLink to={"https://www.instagram.com/startupsquare.co/"} target="_blank"><BsInstagram/></NavLink>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+  )
+}
